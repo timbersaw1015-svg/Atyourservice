@@ -1,0 +1,9 @@
+
+media: media
+
+content:
+  - name: portfolio
+    label: Portfolio Website
+    type: file
+    path: index.html
+    format: code
