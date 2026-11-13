@@ -56,7 +56,7 @@ footer{background:#0b2033;color:#9fb3c5;padding:20px 0;font-size:.82rem}.footer-
 document.getElementById('year').textContent=new Date().getFullYear();
 const photo=document.getElementById('profilePhoto');
 photo.addEventListener('load',()=>{photo.style.display='block';document.getElementById('photoPlaceholder').style.display='none'});
-photo.addEventListener('error',()=>{photo.style.display='none';document.getElementById('photoPlaceholder').style.display='grid'});
+photo.addEventListener('error',()=>{photo.style.display='profile-photo.jpg';document.getElementById('photoPlaceholder').style.display='grid'});
 photo.src='profile-photo.jpg';
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
 </script>
